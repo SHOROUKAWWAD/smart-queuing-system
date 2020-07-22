@@ -1,0 +1,6 @@
+Model path  CPU
+Device  /data/models/intel/person-detection-retail-0013/FP16/person-detection-retail-0013
+results/
+results/manufacturing/
+results/manufacturing/cpu/
+stderr.log

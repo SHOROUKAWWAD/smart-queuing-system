@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "person_detect.py", line 49, in __init__
+    self.model=core.read_network(model=model_structure, weights=model_weights)
+NameError: name 'core' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "person_detect.py", line 187, in <module>
+    main(args)
+  File "person_detect.py", line 109, in main
+    pd= PersonDetect(model, device, threshold)
+  File "person_detect.py", line 51, in __init__
+    raise ValueError("Could not Initialise the network. Have you enterred the correct model path?")
+ValueError: Could not Initialise the network. Have you enterred the correct model path?
