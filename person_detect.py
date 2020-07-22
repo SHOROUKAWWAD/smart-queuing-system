@@ -46,7 +46,7 @@ class PersonDetect:
 
         try:
             self.core = IECore()
-            self.model=core.read_network(model=model_structure, weights=model_weights)
+            self.model=self.core.read_network(model=model_structure, weights=model_weights)
         except Exception as e:
             raise ValueError("Could not Initialise the network. Have you enterred the correct model path?")
 

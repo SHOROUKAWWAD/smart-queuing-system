@@ -1,7 +1,7 @@
 Traceback (most recent call last):
   File "person_detect.py", line 49, in __init__
-    self.model=core.read_network(model=model_structure, weights=model_weights)
-NameError: name 'core' is not defined
+    self.model=self.core.read_network(model=model_structure, weights=model_weights)
+NameError: name 'model_structure' is not defined
 
 During handling of the above exception, another exception occurred:
 
