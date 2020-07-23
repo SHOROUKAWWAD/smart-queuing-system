@@ -3,9 +3,9 @@
 exec 1>/output/stdout.log 2>/output/stderr.log
 
 # TODO: Create MODEL variable
-MODEL=$2
+MODEL=$1
 # TODO: Create DEVICE variable
-DEVICE=$1
+DEVICE=$2
 # TODO: Create VIDEO variable
 VIDEO=$3
 QUEUE=$4
@@ -14,10 +14,6 @@ OUTPUT=$5
 PEOPLE=$6
 
 mkdir -p $5
-
-echo "Model path " $MODEL
-echo "Device " $DEVICE
-
 
 if echo "$DEVICE" | grep -q "FPGA"; then # if device passed in is FPGA, load bitstream to program FPGA
     #Environment variables and compilation for edge compute nodes with FPGAs
