@@ -1,15 +1,1 @@
-Traceback (most recent call last):
-  File "person_detect.py", line 49, in __init__
-    self.model=self.core.read_network(model=model_structure, weights=model_weights)
-NameError: name 'model_structure' is not defined
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "person_detect.py", line 187, in <module>
-    main(args)
-  File "person_detect.py", line 109, in main
-    pd= PersonDetect(model, device, threshold)
-  File "person_detect.py", line 51, in __init__
-    raise ValueError("Could not Initialise the network. Have you enterred the correct model path?")
-ValueError: Could not Initialise the network. Have you enterred the correct model path?
+Couldn't open file /opt/intel/openvino/bitstreams/a10_vision_design_sg1_bitstreams/2019R4_PL1_FP16_MobileNet_Clamp.aocx for reading

@@ -46,7 +46,7 @@ class PersonDetect:
 
         try:
             self.core = IECore()
-            self.model=self.core.read_network(model=model_structure, weights=model_weights)
+            self.model=self.core.read_network(model= self.model_structure, weights= self.model_weights)
         except Exception as e:
             raise ValueError("Could not Initialise the network. Have you enterred the correct model path?")
 
@@ -93,7 +93,7 @@ class PersonDetect:
         img_ =cv2.resize(img_, (w, h))
         img_ = img_.transpose((2, 0, 1))
         img_ = img_.reshape((n, c, h, w))
-        input_dict = {self.input_name: image_}
+        input_dict = {self.input_name: img_}
         return input_dict
 
 
